@@ -31,6 +31,6 @@ public class LocalController {
         localService.update(id, updates);
     }
 
-    @DeleteMapping
+    @DeleteMapping("{id}")
     public void delete(@PathVariable Long id) { localService.delete(id); }
 }
